@@ -1,0 +1,53 @@
+02-08-2021 23:20:08 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/train.csv.
+02-08-2021 23:20:09 - [ERROR] -  file_handler - (file_handler.py).read_csv(line 28) - File not found.
+Traceback (most recent call last):
+  File "/home/z/Documents/Rossmann-Pharmaceuticals-Sales-Prediction/scripts/file_handler.py", line 23, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+02-08-2021 23:20:09 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/store.csv.
+02-08-2021 23:23:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/train.csv.
+02-08-2021 23:23:58 - [ERROR] -  file_handler - (file_handler.py).read_csv(line 28) - File not found.
+Traceback (most recent call last):
+  File "/home/z/Documents/Rossmann-Pharmaceuticals-Sales-Prediction/scripts/file_handler.py", line 23, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "/home/z/.local/lib/python3.8/site-packages/pandas/io/common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+02-08-2021 23:23:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/store.csv.
+02-08-2021 23:28:47 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/train.csv.
+02-08-2021 23:28:47 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/test.csv.
+02-08-2021 23:28:47 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/store.csv.
+02-08-2021 23:33:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/train.csv.
+02-08-2021 23:33:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/test.csv.
+02-08-2021 23:33:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/store.csv.
+02-08-2021 23:37:21 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/train.csv.
+02-08-2021 23:37:23 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/test.csv.
+02-08-2021 23:37:23 - [INFO] -  file_handler - (file_handler.py).read_csv(line 24) - Csv file read from ../data/store.csv.
+03-08-2021 00:15:26 - [INFO] -  file_handler - (file_handler.py).save_model(line 45) - Random Forest Regressor_Sales model Random Forest Regressor_Sales2021-08-02-21:15:26.pkl saved in ../models.
+03-08-2021 00:16:12 - [INFO] -  file_handler - (file_handler.py).save_model(line 45) - Random Forest Regressor_Customers model Random Forest Regressor_Customers2021-08-02-21:16:12.pkl saved in ../models.
